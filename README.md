@@ -1,8 +1,6 @@
 
 # Adversarial Attack Against Sentiment-Analysis Models Using an Aspect-Based Approach
 
-
-##  Abstract
 Adversarial examples are deep learning inputs strategically modified to mislead models and produce incorrect results. Previous work attacks oriented to sentiment analysis have demonstrated successfully confusing models by adversarial examples. However, the existing adversarial attacks focus mainly on document-level sentiment analysis and do not consider the specific characteristics of different analysis levels. In the case of aspect-based analysis, there is a lack of methods that perform modifications in accordance with evaluated aspects. As a result of this lack, unnecessary modifications are made and do not always succeed in misleading the model, avoiding the possibility of identifying new vulnerabilities. 
 
 We consider that the modifications to generate adversarial examples should be designed in a particular way, altering the elements that support the input classification (according to the observed task). Our hypothesis relies on the idea that by focusing on aspect-based characteristics, modifications to generate adversarial examples will be performed on the minimum necessary terms that effectively support the aspect opinion, misleading the model to deal with the task rather than analyze patterns in a text. 
