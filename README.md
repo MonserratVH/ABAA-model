@@ -3,12 +3,9 @@
 
 
 ##  Abstract
-Adversarial examples are deep learning inputs strategically modified to mislead models and produce incorrect results. Previous work attacks oriented to sentiment analysis have demonstrated successfully confusing models by adversarial examples. However, the existing adversarial attacks focus mainly on document-level sentiment analysis and do not consider the specific characteristics of different analysis levels. In the case of aspect-based analysis, there is a lack of methods that perform modifications in accordance with evaluated aspects. As a result of this lack, unnecessary modifications are made and do not always succeed in misleading the model, avoiding the possibility of identifying new vulnerabilities. This work proposes a new model for generating aspect-based adversarial. This model is based on the hypothesis that modifying key terms related to a specific aspect within an opinion may lead to incorrect classifications with fewer and imperceptible modifications. We designed a black box attack based on the proposed model and evaluated it using different datasets and architectures in three different scenarios. The obtained results showed that our proposal outperformed document-level attacks and the state-of-the-art method in terms of accuracy reduction and high semantic similarity, achieving a 65.30 percentage point reduction of model accuracy, with a low word perturbation ratio of 7.79\%. These results highlight the importance of considering task-specific characteristics when designing adversarial examples, as simple modifications in the key elements that support the task classification achieve incorrect results.
-## Aspect-Based Adversarial Example Model
+Adversarial examples are deep learning inputs strategically modified to mislead models and produce incorrect results. Previous work attacks oriented to sentiment analysis have demonstrated successfully confusing models by adversarial examples. However, the existing adversarial attacks focus mainly on document-level sentiment analysis and do not consider the specific characteristics of different analysis levels. In the case of aspect-based analysis, there is a lack of methods that perform modifications in accordance with evaluated aspects. As a result of this lack, unnecessary modifications are made and do not always succeed in misleading the model, avoiding the possibility of identifying new vulnerabilities. 
 
-We consider that the modifications to generate adversarial examples should be designed in a particular way, altering the elements that support the input classification (according to the observed task). 
-
-Our hypothesis relies on the idea that by focusing on aspect-based characteristics, modifications to generate adversarial examples will be performed on the minimum necessary terms that effectively support the aspect opinion, misleading the model to deal with the task rather than analyze patterns in a text. 
+We consider that the modifications to generate adversarial examples should be designed in a particular way, altering the elements that support the input classification (according to the observed task). Our hypothesis relies on the idea that by focusing on aspect-based characteristics, modifications to generate adversarial examples will be performed on the minimum necessary terms that effectively support the aspect opinion, misleading the model to deal with the task rather than analyze patterns in a text. 
 
 We propose a model for generating adversarial examples particularly oriented to aspect-based sentiment analysis, named as ABAA model. Our proposal considers the aspect-based characteristics to determine input modifications, taking care of preserving the input semantic and modifications imperceptibility. In the case of aspect-based analysis, its main characteristic relies on, within an opinion, each evaluated aspect that correlates to a specific term, which allows the user to determine the opinion expressed. 
 
@@ -18,10 +15,12 @@ When designing adversarial examples oriented to aspect-based analysis, two main 
 
 ![Aspect-Based Adversarial Example - Modification Process](https://raw.githubusercontent.com/MonserratVH/ABAA-model/refs/heads/main/Figures/abaa_modification_process.jpg)
 
-
 We designed a black-box adversarial attack applying the proposed ABAA model to evaluate their impact on aspect-
 based classifiers. To generate adversarial examples, our attack implements a local deep learning model to perform word-level modifications via the ABAA model and generate aspect-based adversarial examples. Those modified inputs that mislead the local model are reserved into an adversarial dataset to be later transferred to the victim model.
 ![Aspect-Based Adversarial Attack](https://raw.githubusercontent.com/MonserratVH/ABAA-model/refs/heads/main/Figures/overview_attack.jpg)
+
+The obtained results showed that our proposal outperformed document-level attacks and the state-of-the-art method in terms of accuracy reduction and high semantic similarity, achieving a 65.30 percentage point reduction of model accuracy, with a low word perturbation ratio of 7.79\%. These results highlight the importance of considering task-specific characteristics when designing adversarial examples, as simple modifications in the key elements that support the task classification achieve incorrect results.
+
 
 ## Related
 As local model, we include a version of the method in A Semantic-Proximity Term-Weighting Scheme for Aspect Category Detection proposed by Vázquez-Hernández, Villaseñor-Pineda and Montes-y Gómez (2022)
