@@ -12,10 +12,17 @@ Our hypothesis relies on the idea that by focusing on aspect-based characteristi
 
 We propose a model for generating adversarial examples particularly oriented to aspect-based sentiment analysis, named as ABAA model. Our proposal considers the aspect-based characteristics to determine input modifications, taking care of preserving the input semantic and modifications imperceptibility. In the case of aspect-based analysis, its main characteristic relies on, within an opinion, each evaluated aspect that correlates to a specific term, which allows the user to determine the opinion expressed. 
 
+![Aspect-Based Analysis Example](https://raw.githubusercontent.com/MonserratVH/ABAA-model/refs/heads/main/Figures/absa_example.jpg)
+
 When designing adversarial examples oriented to aspect-based analysis, two main challenges must be faced: i) to identify the terms that express aspect-opinion and ii) to define their possible modifications. First, given an opinion, it is necessary to correctly determine the term that uniquely identifies the sentiment (positive, negative, or neutral) for each evaluated aspect, establishing an aspect-term relation. Second, for each identified term, it is necessary to establish the set of possible modifications _N_ that each identified term could suffer, evaluating and controlling that each modification could be performed if they preserve the correct input semantics and successfully mislead the deep learning model. Under these considerations, we proposed the aspect-based adversarial examples model.
+
+![Aspect-Based Adversarial Example - Modification Process](https://raw.githubusercontent.com/MonserratVH/ABAA-model/refs/heads/main/Figures/abaa_modification_process.jpg)
+
 
 We designed a black-box adversarial attack applying the proposed ABAA model to evaluate their impact on aspect-
 based classifiers. To generate adversarial examples, our attack implements a local deep learning model to perform word-level modifications via the ABAA model and generate aspect-based adversarial examples. Those modified inputs that mislead the local model are reserved into an adversarial dataset to be later transferred to the victim model.
+![Aspect-Based Adversarial Attack](https://raw.githubusercontent.com/MonserratVH/ABAA-model/refs/heads/main/Figures/overview_attack.jpg)
+
 ## Related
 As local model, we include a version of the method in A Semantic-Proximity Term-Weighting Scheme for Aspect Category Detection proposed by Vázquez-Hernández, Villaseñor-Pineda and Montes-y Gómez (2022)
 
