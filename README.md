@@ -1,5 +1,5 @@
 
-# Adversarial Attack Against Sentiment-Analysis Models Using an Aspect-Based Approach
+# Task-Oriented Adversarial Attacks for Aspect-Based Sentiment Analysis Models
 
 Adversarial examples are deep learning inputs strategically modified to mislead models and produce incorrect results. Previous work attacks oriented to sentiment analysis have demonstrated successfully confusing models by adversarial examples. However, the existing adversarial attacks focus mainly on document-level sentiment analysis and do not consider the specific characteristics of different analysis levels. In the case of aspect-based analysis, there is a lack of methods that perform modifications in accordance with evaluated aspects. As a result of this lack, unnecessary modifications are made and do not always succeed in misleading the model, avoiding the possibility of identifying new vulnerabilities. 
 
@@ -24,7 +24,6 @@ The obtained results showed that our proposal outperformed document-level attack
 As local model, we include a version of the method in A Semantic-Proximity Term-Weighting Scheme for Aspect Category Detection proposed by Vázquez-Hernández, Villaseñor-Pineda and Montes-y Gómez (2022)
 
 - [A Semantic-Proximity Term-Weighting Scheme for Aspect Category Detection](http://journal.sepln.org/sepln/ojs/ojs/index.php/pln/article/view/6433)
-
 
 As victim model in the black-box attack, we use the aspect-based sentiment analysis classifier proposed by Huang, Ou and Carley (2018), which implements an attention-over-attention (AOA) mechanism using a Bi-LSTM neuronal network architecture and applies the BERT-base mode.
 
@@ -63,8 +62,8 @@ To use the ABAA model it is necesary to download the GloVe: Global Vectors for W
 
 - _Luis Alberto Morales-Rosales (corresponding author)_ 
     lamorales@conacyt.mx  
-    https://orcid.org/0000-0002-4753-9375 
+    https://orcid.org/0000-0002-4753-9375
+  
 ## Acknowledgements
-
  - This work is supported by CONAHCYT/México scholarship 814461. Besides, it was founded by Catedras-CONAHCYT projects 882 and 613
 
