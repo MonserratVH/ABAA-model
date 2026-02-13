@@ -81,9 +81,9 @@ We include a version of ABSA dataset from SemEval.The original datase is availab
     clopezp@up.edu.mx  
     https://orcid.org/0000-0002-7844-3261
 
-- _Luis Alberto Morales-Rosales (corresponding author)_ 
+- _Luis Alberto Morales-Rosales (corresponding author)_  
     lamorales@conacyt.mx  
-    https://orcid.org/0000-0002-4753-9375 
+    [https://orcid.org/0000-0002-4753-9375](https://orcid.org/0000-0002-4753-9375)
 
 
 ## Acknowledgements
