@@ -58,28 +58,6 @@ We include a version of ABSA dataset from SemEval.The original datase is availab
 
 - [GloVe](https://nlp.stanford.edu/projects/glove/)
 
-## How to cite
-If you use this work, please cite the following paper:
-
-**APA format**
-
-Vázquez-Hernández, M., Algredo-Badillo, I., Villaseñor-Pineda, L., Lobato-Báez, M., Lopez-Pimentel, J. C., & Morales-Rosales, L. A. (2025). Task-Oriented Adversarial Attacks for Aspect-Based Sentiment Analysis Models. Applied Sciences, 15(2), 855.
-
-**BibTex**
-
-```bibtex
-@article{vazquez2025task,
-  title={Task-Oriented Adversarial Attacks for Aspect-Based Sentiment Analysis Models},
-  author={V{\'a}zquez-Hern{\'a}ndez, M. and Algredo-Badillo, I. and Villase{\~n}or-Pineda, L. and Lobato-B{\'a}ez, M. and Lopez-Pimentel, J. C. and Morales-Rosales, L. A.},
-  journal={Applied Sciences},
-  volume={15},
-  number={2},
-  pages={855},
-  year={2025},
-  publisher={MDPI}
-}
-```
-
 
 ## Researchers
 
@@ -107,6 +85,28 @@ Vázquez-Hernández, M., Algredo-Badillo, I., Villaseñor-Pineda, L., Lobato-Bá
     lamorales@conacyt.mx  
     [https://orcid.org/0000-0002-4753-9375](https://orcid.org/0000-0002-4753-9375)
 
+
+## How to cite
+If you use this work, please cite the following paper:
+
+**APA format**
+
+Vázquez-Hernández, M., Algredo-Badillo, I., Villaseñor-Pineda, L., Lobato-Báez, M., Lopez-Pimentel, J. C., & Morales-Rosales, L. A. (2025). Task-Oriented Adversarial Attacks for Aspect-Based Sentiment Analysis Models. Applied Sciences, 15(2), 855.
+
+**BibTex**
+
+```bibtex
+@article{vazquez2025task,
+  title={Task-Oriented Adversarial Attacks for Aspect-Based Sentiment Analysis Models},
+  author={V{\'a}zquez-Hern{\'a}ndez, M. and Algredo-Badillo, I. and Villase{\~n}or-Pineda, L. and Lobato-B{\'a}ez, M. and Lopez-Pimentel, J. C. and Morales-Rosales, L. A.},
+  journal={Applied Sciences},
+  volume={15},
+  number={2},
+  pages={855},
+  year={2025},
+  publisher={MDPI}
+}
+```
 
 ## Acknowledgements
 
