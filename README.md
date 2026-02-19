@@ -62,10 +62,10 @@ We include a version of ABSA dataset from SemEval.The original datase is availab
 If you use this work, please cite the following paper:
 
 **APA format**
+
 Vázquez-Hernández, M., Algredo-Badillo, I., Villaseñor-Pineda, L., Lobato-Báez, M., Lopez-Pimentel, J. C., & Morales-Rosales, L. A. (2025). Task-Oriented Adversarial Attacks for Aspect-Based Sentiment Analysis Models. Applied Sciences, 15(2), 855.
 
 **BibTex**
-**BibTeX**
 
 ```bibtex
 @article{vazquez2025task,
@@ -78,6 +78,8 @@ Vázquez-Hernández, M., Algredo-Badillo, I., Villaseñor-Pineda, L., Lobato-Bá
   year={2025},
   publisher={MDPI}
 }
+```
+
 
 ## Researchers
 
